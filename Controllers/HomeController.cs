@@ -18,7 +18,6 @@ namespace JenkinsTestApp.Controllers
         [HttpGet("{id}")]
         public ActionResult Details(int id)
         {
-            var data = new HelloWorld();
             return View();
         }
 
@@ -29,27 +28,7 @@ namespace JenkinsTestApp.Controllers
             return View();
         }
 
-        // POST: HomeController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: HomeController/Edit/5
-        [HttpGet("{id}/edit")]
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+      
 
         // POST: HomeController/Edit/5
         [HttpPost]
