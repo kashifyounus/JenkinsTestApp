@@ -18,6 +18,7 @@ namespace JenkinsTestApp.Controllers
         [HttpGet("{id}")]
         public ActionResult Details(int id)
         {
+            var data = new HelloWorld();
             return View();
         }
 
